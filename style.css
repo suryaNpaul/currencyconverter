@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0edcf;
+  overflow-y: scroll;
+}
+
+.container {
+  background-color: #fff;
+  margin: 100px auto;
+  width: 800px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 20px;
+}
+
+.currencySection {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #f0edcf;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.currencySection input {
+  border: none;
+  padding: 7px;
+  margin-left: 10px;
+  outline: none;
+  border-right: #f0edcf solid 1.5px;
+  color: slateblue;
+  font-size: 1rem;
+}
+
+.currencySection select {
+  border: none;
+  padding: 7px;
+  margin-left: 10px;
+  outline: none;
+  font-size: 1rem;
+  color: slateblue;
+  text-align: right;
+}
+.container .swap {
+  padding: 10px;
+  border: 2px solid #f0edcf;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: #070f2b;
+  font-weight: 700;
+}
+
+.container .swap:hover {
+  background: #f0edcf45;
+}
+
+.container .result {
+  text-align: center;
+}
+
+
