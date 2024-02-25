@@ -161,6 +161,8 @@ body {
   .currencySection select{
     margin-left: 0px;
     text-align: left;
+    padding: 10px;
+    border-radius: 15px;
   }
   .container input{
     text-align: left;
