@@ -31,6 +31,8 @@ body {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .currencySection input {
@@ -46,14 +48,23 @@ body {
 
 .currencySection select {
   border: none;
-  padding: 10px;
-  margin-left: 10px;
   outline: none;
+  padding: 7px;
+  margin-left: 35px;
   font-size: 1rem;
   color: slateblue;
   text-align: right;
   font-weight: 600;
 }
+
+.container .currencySection img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0.5rem;
+  left: 16rem; /* Adjust this value based on your design */
+}
+
 .container .swap {
   padding: 12px;
   border: 2px solid #f0edcf;
@@ -106,16 +117,6 @@ body {
   -moz-appearance: textfield; /* Firefox */
 }
 
-.currencySection select {
-  border: none;
-  padding: 7px;
-  margin-left: 10px;
-  outline: none;
-  font-size: 1rem;
-  color: slateblue;
-  text-align: right;
-}
-
 /* Style the dropdown options */
 .currencySection select option {
   background-color: rgba(
@@ -163,8 +164,8 @@ body {
     flex-direction: column;
   }
   .currencySection select {
-    margin-left: 0px;
-    text-align: left;
+    margin-left: 35px;
+    text-align: right;
     padding: 10px;
     border-radius: 15px;
   }
@@ -177,6 +178,13 @@ body {
     border-radius: 15px;
     margin-left: 0px;
   }
+  .container .currencySection img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+}
   .container .swap{
     font-size: 0.8rem;
   }
