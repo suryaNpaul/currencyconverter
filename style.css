@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #f0edcf;
+  background-color: #2219d3;
   overflow-y: scroll;
 }
 
@@ -164,6 +164,14 @@ body {
   }
   .container input{
     text-align: left;
+    border-right: none;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .container input:focus{
+    border: 2px solid blue;
   }
   .container .result {
     font-size: 0.8rem;
