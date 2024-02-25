@@ -38,6 +38,7 @@ body {
   border-right: #f0edcf solid 1.5px;
   color: slateblue;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .currencySection select {
@@ -48,6 +49,7 @@ body {
   font-size: 1rem;
   color: slateblue;
   text-align: right;
+  font-weight: 600;
 }
 .container .swap {
   padding: 10px;
@@ -68,3 +70,102 @@ body {
 }
 
 
+
+
+/* Style the number input */
+.currencySection input[type="number"] {
+  -webkit-appearance: textfield; /* Remove default arrows on WebKit browsers */
+  appearance: textfield; /* Remove default arrows on other browsers */
+}
+
+/* Style the spinner buttons */
+.currencySection input[type="number"]::-webkit-inner-spin-button,
+.currencySection input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Remove default arrows on WebKit browsers */
+  margin: 0; /* Remove default margins */
+}
+
+.currencySection input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.currencySection input[type="number"]::-webkit-inner-spin-button,
+.currencySection input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Remove default arrows on WebKit browsers */
+  margin: 0; /* Remove default margins */
+}
+
+/* Style the spinner buttons */
+.currencySection input[type="number"]::-webkit-inner-spin-button,
+.currencySection input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Remove default arrows on WebKit browsers */
+  margin: 0; /* Remove default margins */
+}
+
+.currencySection input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.currencySection select {
+  border: none;
+  padding: 7px;
+  margin-left: 10px;
+  outline: none;
+  font-size: 1rem;
+  color: slateblue;
+  text-align: right;
+}
+
+/* Style the dropdown options */
+.currencySection select option {
+  background-color: rgba(255, 255, 255, 0.646); /* Background color of each option */
+  color: slateblue; /* Text color of each option */
+  padding: 8px;
+}
+
+/* Hover effect for options */
+.currencySection select option::hover {
+  background-color: red; /* Hover background color */
+}
+
+.currencySection select::-webkit-scrollbar {
+  width: 15px;
+}
+
+.currencySection select::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 15px;
+}
+
+.currencySection select::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 15px;
+}
+
+.currencySection select::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .container h1{
+    text-align: center;
+  }
+  .currencySection {
+    flex-direction: column;
+  }
+  .currencySection select{
+    margin-left: 0px;
+    text-align: left;
+  }
+  .container input{
+    text-align: left;
+  }
+  .container .result {
+    font-size: 0.8rem;
+  }
+}
