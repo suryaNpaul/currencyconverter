@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #2219d3;
+  background-color: #f7ee94;
   overflow-y: scroll;
 }
 
 .container {
-  background-color: #fff;
+  background-color: #ffffffd4;
   margin: 100px auto;
   width: 800px;
   padding: 3rem 2.5rem;
@@ -19,12 +19,15 @@ body {
   align-items: center;
   gap: 1.2rem;
   border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .currencySection {
   width: 80%;
   padding: 10px;
-  border: 1px solid #f0edcf;
+  background-color: #ffffffd4;
+  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -32,7 +35,7 @@ body {
 
 .currencySection input {
   border: none;
-  padding: 7px;
+  padding: 10px;
   margin-left: 10px;
   outline: none;
   border-right: #f0edcf solid 1.5px;
@@ -43,7 +46,7 @@ body {
 
 .currencySection select {
   border: none;
-  padding: 7px;
+  padding: 10px;
   margin-left: 10px;
   outline: none;
   font-size: 1rem;
@@ -52,11 +55,11 @@ body {
   font-weight: 600;
 }
 .container .swap {
-  padding: 10px;
+  padding: 12px;
   border: 2px solid #f0edcf;
   background: #fff;
   border-radius: 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #070f2b;
   font-weight: 700;
 }
@@ -68,9 +71,6 @@ body {
 .container .result {
   text-align: center;
 }
-
-
-
 
 /* Style the number input */
 .currencySection input[type="number"] {
@@ -118,7 +118,12 @@ body {
 
 /* Style the dropdown options */
 .currencySection select option {
-  background-color: rgba(255, 255, 255, 0.646); /* Background color of each option */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.646
+  ); /* Background color of each option */
   color: slateblue; /* Text color of each option */
   padding: 8px;
 }
@@ -146,33 +151,36 @@ body {
   background-color: #555;
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .container {
     width: 90%;
   }
-  .container h1{
+  .container h1 {
     text-align: center;
+    font-size: 25px;
   }
   .currencySection {
     flex-direction: column;
   }
-  .currencySection select{
+  .currencySection select {
     margin-left: 0px;
     text-align: left;
     padding: 10px;
     border-radius: 15px;
   }
-  .container input{
+  .container input {
     text-align: left;
     border-right: none;
     margin-bottom: 10px;
     border: 1px solid black;
     padding: 10px;
     border-radius: 15px;
+    margin-left: 0px;
   }
-  .container input:focus{
+  .container .swap{
+    font-size: 0.8rem;
+  }
+  .container input:focus {
     border: 2px solid blue;
   }
   .container .result {
