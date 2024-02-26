@@ -206,6 +206,8 @@ function swapcurr() {
   let tempCurr = fromCurrency.value;
   fromCurrency.value = toCurrency.value;
   toCurrency.value = tempCurr;
+  loadFlag(fromCurrency);
+  loadFlag(toCurrency);
   calculate();
 }
 
