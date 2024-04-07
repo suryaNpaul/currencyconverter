@@ -25,6 +25,5 @@ A simple currency converter calculator that allows users to convert between diff
 
 ## Webpage link 
 
-   ```bash
-   https://suryaNpaul.github.io/currencyconverter
+   [Website link](https://suryaNpaul.github.io/currencyconverter)
 
